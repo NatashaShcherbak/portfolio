@@ -31,7 +31,8 @@ body {
 a {
     text-decoration: none;
 }
-a img {
+a img,
+a svg {
     display: block;
 }
 ul {
@@ -57,7 +58,7 @@ ul {
 }
 .hover:hover {
     color: var(--dark-grey);
-    transition-duration: 0.3s;
+    transition-duration: 0.2s;
     transition-property: color;
 }
 .header {
@@ -179,8 +180,11 @@ ul {
     bottom: 0;
     left: 0;
 }
-.footer__item_tel::before {
-    background: url(./img/tel.svg) center no-repeat;
+.footer__tel {
+    margin-right: 6px;
+}
+a:hover .footer__tel path {
+    fill: var(--dark-grey);
 }
 .footer__social {
     justify-content: center;
