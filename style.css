@@ -127,22 +127,18 @@ ul {
     width: 50%;
     margin: 0 18px;
 }
-.skills__item p {
-    height: 100%;
-}
 .skills__box {
     background-color: var(--light-pink);
     padding: 24px 16px;
     box-shadow: 0 0 2px var(--pink);
+    height: 100%;
 }
-.skills__box li {
-    padding-bottom: 12px;
-}
-.skills__box li:last-child {
+.skills__box .skills__text:last-child {
     padding-bottom: 0;
 }
 .skills__text {
     color: var(--dark-grey);
+    padding-bottom: 12px;
 }
 .projects {
     background-color: var(--light-orange);
@@ -191,7 +187,6 @@ a:hover .footer__tel path {
     gap: 12px;
     padding-top: 10px;
 }
-.footer__social-link img {
-    width: 28px;
-    height: 28px;
+.footer__social-link:hover svg path {
+    fill: var(--dark-grey);
 }
